@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="resources/styles.css">
+    <title>Display: Flex Box Commands</title>
+</head>
+
+<body>
+    <header>
+        <img src="resources/freaky-cat.png" width="150px" height="150px"/>
+        <h1>Flex-Box Examples</h1>
+        <img src="resources/freaky-cat.png" width="150px" height="150px"/>
+    </header>
+
+    <div class="flex">
+        <h2>Display: Flex</h2>
+        <p>It's a display atributte that helps a website to become more responsive. In this document, we'll go through different properties about position so we can align the block-level elements that the declaration has to offer!</p>
+    </div>
+
+    <div class="axes">
+        <h2>Axes</h2>
+        <span>Flex containers works with two axes.</span>
+        <p>The <strong>main axis</strong> <em>normally</em> refers for the horizontal directions and the <strong>cross axis</strong> for vertical directions. <span>It's important to note that the axis are interchangeable! Meaning that when using a column, the main axis will be the vertical one and vice-versa.</span>
+        </p>
+        <div class="properties">
+            <div class="main-axis-prop">
+                <h3>Main Axis properties</h3>
+                <p>[.justify-content]</p>
+                <p>[.flex-wrap]</p>
+            </div>
+            <div class="cross-axis-prop">
+                <h3>Cross Axis properties</h3>
+                <p>[.align-items]</p>
+                <p>[.align-content]</p>
+            </div>
+        </div>
+    </div>
+
+        <h2 class="axis-title">Main Axis Properties</h2>
+
+    <div class="main-axis">
+
+        <div class="content">
+            <div class="justify-content">
+                <h3>.justify-content</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>
+                                <th colspan="8">justify-content</th>
+                            </td>
+                            </tr>
+                    </thead>
+                    <tbody>
+
+                        <!-- FLEX-START -->
+                        <tr>
+                            <td>flex-start</td>
+                            <td class="cell red"></td>
+                            <td class="cell red"></td>
+                            <td class="cell red"></td>
+                            <td class="cell"></td>
+                            <td class="cell"></td>
+                            <td class="cell"></td>
+                            <td class="cell"></td>
+                        </tr>
+
+                        <!-- FLEX-END -->
+                        <tr>
+                            <td>flex-end</td>
+                            <td class="cell"></td>
+                            <td class="cell"></td>
+                            <td class="cell"></td>
+                            <td class="cell"></td>
+                            <td class="cell red"></td>
+                            <td class="cell red"></td>
+                            <td class="cell red"></td>
+                        </tr>
+
+                        <!-- CENTER -->
+                        <tr>
+                            <td>center</td>
+                            <td class="cell"></td>
+                            <td class="cell"></td>
+                            <td class="cell red"></td>
+                            <td class="cell red"></td>
+                            <td class="cell red"></td>
+                            <td class="cell"></td>
+                            <td class="cell"></td>
+                        </tr>
+
+                        <!-- SPACE-AROUND -->
+                        <tr>
+                            <td>space-around</td>
+                            <td class="cell red"></td>
+                            <td class="cell"></td>
+                            <td class="cell red"></td>
+                            <td class="cell"></td>
+                            <td class="cell red"></td>
+                            <td class="cell"></td>
+                            <td class="cell red"></td>
+                        </tr>
+
+                        <!-- SPACE-BETWEEN -->
+                        <tr>
+                            <td>space-between</td>
+                            <td class="cell"></td>
+                            <td class="cell red"></td>
+                            <td class="cell"></td>
+                            <td class="cell red"></td>
+                            <td class="cell"></td>
+                            <td class="cell red"></td>
+                            <td class="cell"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex-wrap">
+                <h3>.flex-wrap</h3>
+                <p>Move Items to the next line if necessary. It accepts 3 different values.</p>
+                <ul>
+                    <li><strong>[.wrap]:</strong> Child elements that don't fit into a row will move down to the next line.</li>
+                    <li><strong>[.wrap-reverse]:</strong> Same as wrap. but the order of rows is reversed.</li>
+                    <li><strong>[.nowrap]</strong> prevents from wrapping. Default Value</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="cross-axis">
+
+        <div class="axis-title">
+            <h2>Cross Axis Properties</h2>
+        </div>
+
+        <div class="align-items">
+            <h3>.align-items</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="8">align-items</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <!-- FLEX-START -->
+                    <tr>
+                        <td rowspan="3">flex-start</td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+
+                    <!-- FLEX-END -->
+                    <tr>
+                        <td rowspan="3">flex-end</td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+
+                    <!-- CENTER -->
+                    <tr>
+                        <td rowspan="3">center</td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+
+                    <!-- BASELINE -->
+                    <tr>
+                        <td rowspan="3">baseline</td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell red"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell red"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+
+                    <!-- STRETCH -->
+                    <tr>
+                        <td>stretch</td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td rowspan="3" class="cell red"></td>
+                        <td rowspan="3" class="cell red"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                        <td class="cell"></td>
+                    </tr>
+            </table>
+        </div>
+
+        <h3>.align-content</h3>
+
+        <div class="align-content">
+            
+            <div class="flex-start">
+                <h4>flex-start</h4>
+                <div class="container">
+                    <div class="grey">1</div>
+                    <div class="grey">2</div>
+                    <div class="grey">3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
+            </div>
+
+            <div class="flex-end">
+                <h4>flex-end</h4>
+                <div class="container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div class="grey">5</div>
+                    <div class="grey">6</div>
+                    <div class="grey">7</div>
+                    <div>8</div>
+                </div>
+            </div>
+
+            <div class="center">
+                <h4>center</h4>
+                <div class="container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div class="grey">5</div>
+                    <div class="grey">6</div>
+                    <div class="grey">7</div>
+                    <div>8</div>
+                </div>
+            </div>
+
+            <div class="space-between">
+                <h4>space-between</h4>
+                <div class="container">
+                    <div class="grey">1</div>
+                    <div class="grey">2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div class="grey">7</div>
+                    <div>8</div>
+                </div>
+            </div>
+
+            <div class="space-around">
+                <h4>space-around</h4>
+                <div class="container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div class="grey">3</div>
+                    <div class="grey">4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div class="grey">7</div>
+                    <div>8</div>
+                </div>
+            </div>
+
+            <div class="stretch">
+                <h4>stretch</h4>
+                <div class="container">
+                    <div aria-rowspan="1 / 2" class="grey">1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div class="grey">1</div>
+                    <div class="grey">2</div>
+                    <div class="grey">3</div>
+                    <div class="grey">4</div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+<footer>
+    <p>copyright 2025 grassmower</p>
+</footer>
+
+
+</html>

@@ -1,0 +1,153 @@
+* {
+    border: 1px solid red; 
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(219, 80, 38);
+    text-align: center;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    max-height: 150px;
+    flex-basis: 1 2 300px;
+}
+
+h2 {
+    font-size: 26px;
+    color: rgb(161, 64, 64);
+}
+
+h3 {
+    font-size: 24px;
+    color: rgb(235, 221, 28);
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h2, h3, h4 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.properties {
+    border: 1px solid gray;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.main-axis-prop, .cross-axis-prop {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+/* AXIS */
+
+.axis-title {
+    align-content: center;
+}
+
+/* MAIN AXIS CONTENT*/
+
+.main-axis {
+    border: 1px solid gray;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: auto;
+}
+
+.content {
+    display: flex;
+    flex-wrap: column wrap;
+    justify-content: center;
+}
+
+.justify-content {
+    border: 1px solid gray;
+    min-width: 300px;
+    flex-basis: 2 1 350px;
+}
+
+.flex-wrap {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+
+/* CROSS AXIS */
+
+.cross-axis {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: auto;
+}
+
+.align-items {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    min-width: 600px;
+}
+
+.align-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(2, 100px);
+    border: 1px solid white;
+}
+
+/** TABLE **/
+
+
+table, th, td {
+    border: 1px solid white;
+}
+
+thead {
+    text-align: center;
+}
+
+.cell {
+    height: 10px;
+    min-width: 10px;
+}
+
+.red {
+    background-color: red;
+}
+
+
+/* GRID */
+
+.grey {
+    background-color: gray;
+}
