@@ -82,6 +82,8 @@ strong {
 
 .justify-content {
     border: 1px solid gray;
+    display: flex;
+    flex-flow: column wrap;
     min-width: 300px;
     flex-basis: 2 1 350px;
 }
@@ -146,4 +148,5 @@ thead {
 
 .grey {
     background-color: gray;
+
 }
