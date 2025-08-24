@@ -14,6 +14,7 @@ header {
     text-align: center;
     border: 1px solid gray;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     max-height: 150px;
     flex-basis: 1 2 300px;
@@ -150,3 +151,4 @@ thead {
     background-color: blue;
 
 }
+
