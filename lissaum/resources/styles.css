@@ -1,8 +1,8 @@
 body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color: #1F1F1F;
+    color: #D8D8D8;
     display: flex;
     flex-flow: column wrap;
 }
@@ -37,6 +37,11 @@ h4 {
 h2, h3, h4 {
     font-weight: bold;
     text-align: center;
+}
+
+span {
+    color: #D8D8D8;
+    font-size: 18px;
 }
 
 .properties {
@@ -151,4 +156,5 @@ thead {
     background-color: blue;
 
 }
+
 
