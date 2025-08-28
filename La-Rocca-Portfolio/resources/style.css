@@ -10,8 +10,8 @@ html {
 }
 
 header {
-    margin-top: 1%;
-    margin-bottom: 1.5%;
+    margin-top: 2em;
+    margin-bottom: 1em;
     border-bottom: 1px solid white;
 }
 
@@ -46,7 +46,7 @@ img {
 
 
 .projects {
-    margin-top: 1.5%;
+    margin-top: 10px;
     border-bottom: 1px solid white;
 }
 
@@ -60,8 +60,14 @@ img {
     color: aqua;
 }
 
+/* FOOTER */
+
 footer {
-    margin: 2.5% auto;
+    margin: 2em auto;
+}
+
+.credits {
+    font-size: 0.8em;
 }
 
 /* Buttons */
