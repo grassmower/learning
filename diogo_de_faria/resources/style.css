@@ -1,0 +1,69 @@
+
+
+/* Global Styles */
+
+body {
+    background-color: rgba(240, 206, 12, 0.959);
+    position: relative;
+    top: 5em;
+    font-size: 18px;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgb(255, 196, 12);
+}
+
+.nav-item {
+    color: rgb(255, 196, 12);
+}
+
+.nav-item a:hover {
+    background-color: rgba(10, 49, 156, 0.959);
+    color: white;
+    padding: 22px;
+}
+
+/* CENTER */
+
+.jumbotron {
+    background-image: url('main-header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: auto;
+}
+
+.jumbotron h1 {
+    opacity: 1;
+}
+
+.players img {
+    width: 20em;
+    min-width: 15em;
+}
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.959);
+    color: black;
+    margin: 30px;
+}
+
+.testimonial h2 {
+    color: rgba(10, 49, 156, 0.959);
+}
+
+.h-v {
+    color: white;
+    background-color: rgba(10, 49, 156, 0.959);
+    border: 1px solid black;
+}
+
+.valores, .horario {
+    border: 1px solid black;
+}
