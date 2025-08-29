@@ -1,0 +1,125 @@
+
+/* Global Styles */
+
+body {
+    background-color: rgb(206, 206, 206);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+/* Typography */
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 3em;
+}
+
+h2 {
+    color: rgb(214, 214, 214);
+    background-color: rgb(4, 59, 85);
+    width: auto;
+}
+
+main p {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation Styles */
+
+nav ul {
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(4, 59, 85);
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        padding-left: 5px;
+    }
+}
+
+nav li {
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in;
+}
+
+nav a {
+    color: white;
+}
+
+nav li:hover, nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(4, 59, 85);
+    cursor: pointer;
+}
+
+
+/* MAIN CONTENT */
+
+.shop-container, .about-container, .contact-container {
+    background-color: rgba(255, 255, 255, 0.801);
+    margin-top: -1.3em;
+}
+
+.shop-container, .contact-container {
+    padding-top: 5px;
+}
+
+.brands{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.brands img {
+    display: flex;
+    flex: 1 1 100px;
+    max-width: 150px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px), (orientation: landscape) {
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+.contact-container {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.contact-container ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+    font-size: 0.8em;
+    margin: 30px auto;
+}
